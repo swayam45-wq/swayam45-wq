@@ -14,10 +14,27 @@ When I am not coding, I am balancing my academic schedule by working as a Softwa
 
 ## 🚀 Latest Projects
 
+### ⚡ VoltWise — AI-Powered EV Charging Optimizer
+VoltWise is a full-stack intelligent EV charging platform that tells you exactly when to charge your car, how much it'll cost, and how it'll affect your battery — using real optimization math and machine learning.
+
+**The Optimizer:** Built a Linear Programming solver (PuLP + CBC) that finds the cheapest valid charging window across 24 hours, respecting departure time, charge rate, and battery constraints. Real operations research, not a heuristic.
+
+**The ML Model:** Trained an XGBoost model (R² = 0.993) on 15,000 physics-informed synthetic sessions to predict battery degradation before you even plug in. Outperformed Ridge Regression and Random Forest.
+
+**Real Vehicle Integration:** Integrated Smartcar OAuth 2.0 (30+ EV brands including Tesla, Ford, BMW, Hyundai, Rivian) and Tesla Fleet API so the app auto-fills battery %, capacity, and SoH from the actual vehicle.
+
+**Live Electricity Pricing:** Pulls real-time spot market prices from the Awattar API (Europe) and EIA API (US). Built a ZIP/postal code auto-detection system that maps any code worldwide to the correct pricing region.
+
+**Tech Stack:** Python · FastAPI · React · TypeScript · XGBoost · PuLP · Smartcar API · SQLAlchemy · Alembic · 62 passing tests
+
+🔗 [View on GitHub](https://github.com/swayam45-wq/EV-prediction)
+
+---
+
 ### Unstuck (Wildhacks 2026)
 Unstuck is a full-stack, ADHD-friendly agentic calendar application designed to combat executive dysfunction and time blindness by abstracting away the cognitive load of schedule management.
 The Tech: Built using Next.js, TypeScript, Python, FastAPI, and MongoDB.
-AI Integration: I integrated the Google Gemini 2.5 Flash API to parse complex user brain-dumps into 1-5 highly specific, actionable subtasks with precise time estimates. 
+AI Integration: I integrated the Google Gemini 2.5 Flash API to parse complex user brain-dumps into 1-5 highly specific, actionable subtasks with precise time estimates.
 The Algorithm: Implemented a Priority-Weighted Earliest Deadline First (PW-EDF) algorithm that dynamically rebalances user schedules, safely pushing non-fixed calendar events backward without missing hard deadlines.
 Automation: Developed a scalable backend leveraging Google OAuth 2.0 to natively automate workflows across Google Calendar, Docs, and Gmail APIs.
 

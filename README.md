@@ -31,8 +31,8 @@ VoltWise is a full-stack intelligent EV charging platform that tells you exactly
 
 ---
 
-### Unstuck (Wildhacks 2026)
-Unstuck is a full-stack, ADHD-friendly agentic calendar application designed to combat executive dysfunction and time blindness by abstracting away the cognitive load of schedule management.
+### FTax (Wildhacks 2026)
+FTax is a full-stack, ADHD-friendly agentic calendar application designed to combat executive dysfunction and time blindness by abstracting away the cognitive load of schedule management.
 The Tech: Built using Next.js, TypeScript, Python, FastAPI, and MongoDB.
 AI Integration: I integrated the Google Gemini 2.5 Flash API to parse complex user brain-dumps into 1-5 highly specific, actionable subtasks with precise time estimates.
 The Algorithm: Implemented a Priority-Weighted Earliest Deadline First (PW-EDF) algorithm that dynamically rebalances user schedules, safely pushing non-fixed calendar events backward without missing hard deadlines.

@@ -32,11 +32,12 @@ VoltWise is a full-stack intelligent EV charging platform that tells you exactly
 ---
 
 ### FTax (Wildhacks 2026)
-FTax is a full-stack, ADHD-friendly agentic calendar application designed to combat executive dysfunction and time blindness by abstracting away the cognitive load of schedule management.
-The Tech: Built using Next.js, TypeScript, Python, FastAPI, and MongoDB.
-AI Integration: I integrated the Google Gemini 2.5 Flash API to parse complex user brain-dumps into 1-5 highly specific, actionable subtasks with precise time estimates.
-The Algorithm: Implemented a Priority-Weighted Earliest Deadline First (PW-EDF) algorithm that dynamically rebalances user schedules, safely pushing non-fixed calendar events backward without missing hard deadlines.
-Automation: Developed a scalable backend leveraging Google OAuth 2.0 to natively automate workflows across Google Calendar, Docs, and Gmail APIs.
+FTax is a modern, secure web application that helps F-1 international students at UIC determine their tax residency status and identify required IRS forms.
+**Residency Engine:** Built a rule-driven engine that automatically calculates tax residency status (Resident vs. Nonresident Alien) based on the Substantial Presence Test and F-1 exempt years using a user's travel history.
+**The Tech Stack:** Engineered a full-stack monorepo using Next.js (App Router), NestJS, PostgreSQL, and Prisma ORM, utilizing pnpm workspaces for shared types and configurations.
+**Security & Privacy:** Implemented AES-256-GCM encryption at rest for sensitive PII (like SSNs) and secured backend endpoints with JWT-based authentication featuring HTTP-only rotating refresh cookies.
+**Dynamic Configuration:** Abstracted IRS tax rules into version-controlled JSON configurations, enabling non-technical updates for new tax years without altering application code.
+🔗 [View on GitHub](https://github.com/swayam45-wq/Ftax)
 
 ---
 
